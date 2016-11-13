@@ -30,4 +30,6 @@ else
     printf 'id: salty-desktop\nfile_client: local\n\n' | sudo tee /etc/salt/minion
     echo "==> Setting access permissions to salt-minion config"
     sudo chmod 0644 /etc/salt/minion
+    sudo systemctl stop salt-minion
+    sudo systemctl disable salt-minion
 fi
