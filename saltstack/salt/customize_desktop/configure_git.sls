@@ -3,6 +3,7 @@
 {% set git_user = customize_desktop.configure_git.get('user') %}
 {% set git_core = customize_desktop.configure_git.get('core') %}
 {% set git_merge = customize_desktop.configure_git.get('merge') %}
+{% set git_color = customize_desktop.configure_git.get('color') %}
 {% set git_credential = customize_desktop.configure_git.get('credential') %}
 
 {% if git_user.get('name') %}
@@ -55,6 +56,16 @@ merge.log:
       - pkg: git
 {% endif %}
 
+{% if git_color.get('ui') %}
+color.ui:
+  git.config_set:
+    - value: {{ customize_desktop.configure_git.color.ui }}
+    - user: {{ user }}
+    - is_global: true
+    - require:
+      - pkg: git
+{% endif %}
+
 {% if git_credential.get('helper') %}
 credential.helper:
   git.config_set:
@@ -65,7 +76,7 @@ credential.helper:
       - pkg: git
 {% endif %}
 
-{% for alias, replacement in customize_desktop.configure_git.get('alias') %}
+{% for alias, replacement in customize_desktop.configure_git.get('alias').items() %}
 alias.{{ alias }}:
   git.config_set:
     - value: {{ replacement }}
