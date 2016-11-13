@@ -65,7 +65,7 @@ credential.helper:
       - pkg: git
 {% endif %}
 
-{% for alias, replacement in desktop.configure_git.get('alias') %}
+{% for alias, replacement in customize_desktop.configure_git.get('alias') %}
 alias.{{ alias }}:
   git.config_set:
     - value: {{ replacement }}
