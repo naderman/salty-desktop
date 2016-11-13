@@ -2,7 +2,7 @@
 
 # script/update: Update application to run for its current checkout.
 
-set -e
+set -ex
 
 cd "$(dirname "$0")/.."
 
