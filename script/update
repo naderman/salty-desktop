@@ -19,4 +19,4 @@ sudo chmod -R 0644 /srv/salt
 sudo chmod -R 0644 /srv/pillar
 
 echo "==> Running salt-call..."
-sudo salt-call state.highstate
+sudo salt-call -l info state.highstate
