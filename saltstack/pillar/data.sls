@@ -35,3 +35,4 @@ install_packages:
   - vim-nox
   - vim-gtk
   - git
+  - keepassx
