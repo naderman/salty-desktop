@@ -16,8 +16,8 @@ Vagrant.configure(2) do |config|
       virtualbox.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     end
 
-    # load Ubuntu 14.04 LTS (Trusty Tahr)
-    desktop.vm.box = 'ubuntu/trusty64'
+    # load Ubuntu 16.04 LTS (Xenial Xerus)
+    desktop.vm.box = 'ubuntu/xenial64'
 
     # disable default share
     desktop.vm.synced_folder '.', '/vagrant', disabled: true

@@ -15,7 +15,7 @@ else
 fi
 
 # https://docs.saltstack.com/en/2015.5/topics/installation/ubuntu.html
-if [ -f "/etc/apt/sources.list.d/saltstack-salt-trusty.list" ]; then
+if [ -f "/etc/apt/sources.list.d/saltstack-salt-xenial.list" ]; then
     echo "==> SaltStack repository available"
 else
     echo "==> Adding the SaltStack repository"
