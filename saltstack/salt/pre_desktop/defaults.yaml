@@ -4,7 +4,7 @@ locale_system: en_US
 locales_present: []
 timezone: Etc/UTC
 packages:
-  - ubuntu-desktop
+  - kubuntu-desktop
 restricted_extras_packages:
   - ubuntu-restricted-extras
 extra_packages: []
