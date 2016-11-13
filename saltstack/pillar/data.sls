@@ -21,14 +21,14 @@ customize_desktop:
       email: naderman@naderman.de
     core:
       editor: vim
-    color
-	  ui = true
-    merge
-      log = true
-    credential
-      helper = cache
-    alias
-      dc = diff --cached
+    color:
+      ui: "true"
+    merge:
+      log: "true"
+    credential:
+      helper: "cache"
+    alias:
+      dc: "diff --cached"
 install_gems:
   - rubocop
 install_packages:
