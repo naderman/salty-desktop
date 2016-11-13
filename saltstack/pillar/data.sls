@@ -15,6 +15,7 @@ customize_desktop:
     - vagrant
     - nodejs
     - dropbox
+    - veracrypt
   configure_git:
     user:
       name: Nils Adermann
