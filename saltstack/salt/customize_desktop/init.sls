@@ -28,6 +28,9 @@ include:
 {% if 'smplayer' in customize_desktop.get('third_party_applications') %}
   - customize_desktop.install_smplayer
 {% endif %}
+{% if 'veracrypt' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_veracrypt
+{% endif %}
 #  - customize_desktop.unity_launcher
 {% if customize_desktop.get('configure_git') %}
   - customize_desktop.configure_git
