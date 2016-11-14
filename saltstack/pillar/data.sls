@@ -42,3 +42,4 @@ install_packages:
   - vim-gtk
   - git
   - keepassx
+  - nginx
