@@ -30,6 +30,9 @@ customize_desktop:
       helper: "cache"
     alias:
       dc: "diff --cached"
+  generate_ssh_keys:
+    - comment: naderman@saumur
+      identifier: id
 install_gems:
   - rubocop
 install_packages:
