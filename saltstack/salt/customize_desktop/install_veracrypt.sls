@@ -1,3 +1,5 @@
+{% set user = salt.pillar.get('user') %}
+
 install_veracrypt:
   pkgrepo.managed:
     - ppa: unit193/encryption
@@ -7,7 +9,7 @@ install_veracrypt:
 veracrypt:
   pkg.installed
 
-/home/naderman/Documents:
+/home/{{ user }}/Documents:
   file.symlink:
     - target: /media/veracrypt1
     - force: true

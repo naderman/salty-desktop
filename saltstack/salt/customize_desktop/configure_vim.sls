@@ -9,4 +9,5 @@ dotvim:
     - force_clone: True
     - force_fetch: True
     - submodules: True
-
+    - require:
+      - pkg: git
