@@ -38,5 +38,8 @@ include:
 {% if customize_desktop.get('generate_ssh_keys') %}
   - customize_desktop.generate_ssh_keys
 {% endif %}
+{% if customize_desktop.get('configure_vim') %}
+  - customize_desktop.configure_vim
+{% endif %}
 {% endif %}
 
