@@ -6,3 +6,5 @@ bashrc:
     - name: /home/{{ user }}/.bashrc
     - source: salt://bash/bashrc
 
+autojump:
+  pkg.installed
