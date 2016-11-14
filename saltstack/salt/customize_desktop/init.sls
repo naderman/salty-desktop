@@ -41,5 +41,8 @@ include:
 {% if customize_desktop.get('configure_vim') %}
   - customize_desktop.configure_vim
 {% endif %}
+{% if customize_desktop.get('configure_bash') %}
+  - customize_desktop.configure_bash
+{% endif %}
 {% endif %}
 
