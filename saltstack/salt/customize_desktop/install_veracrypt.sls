@@ -6,3 +6,7 @@ install_veracrypt:
 
 veracrypt:
   pkg.installed
+
+/home/naderman/Documents:
+  file.symlink:
+    - target: /media/veracrypt1
