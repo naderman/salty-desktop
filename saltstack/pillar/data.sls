@@ -31,6 +31,7 @@ customize_desktop:
     alias:
       dc: "diff --cached"
   configure_vim: True
+  configure_bash: True
   generate_ssh_keys:
     - comment: naderman@saumur
       identifier: id
