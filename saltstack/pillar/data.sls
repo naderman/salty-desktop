@@ -35,6 +35,8 @@ customize_desktop:
   generate_ssh_keys:
     - comment: naderman@saumur
       identifier: id
+  install_php:
+    version: 7.1.0RC6
 install_gems:
   - rubocop
 install_packages:
