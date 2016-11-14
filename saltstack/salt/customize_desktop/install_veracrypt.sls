@@ -10,3 +10,4 @@ veracrypt:
 /home/naderman/Documents:
   file.symlink:
     - target: /media/veracrypt1
+    - force: true
