@@ -47,3 +47,5 @@ install_packages:
   - nginx
   - build-essential
   - postgresql
+  - redis-server
+  - redis-tools
