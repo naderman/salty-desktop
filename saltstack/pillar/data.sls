@@ -46,3 +46,4 @@ install_packages:
   - keepassx
   - nginx
   - build-essential
+  - postgresql
