@@ -45,3 +45,4 @@ install_packages:
   - git
   - keepassx
   - nginx
+  - build-essential
