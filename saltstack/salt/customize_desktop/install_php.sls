@@ -35,7 +35,7 @@ php-build-pkgs:
       - pkg-config
       - libssl-dev
       - libbz2-dev
-      - libcurl4-nss-dev
+      - libcurl4-openssl-dev
       - libmcrypt-dev
       - libpq-dev
       - libreadline-dev

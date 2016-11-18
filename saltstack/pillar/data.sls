@@ -49,3 +49,4 @@ install_packages:
   - postgresql
   - redis-server
   - redis-tools
+  - thunderbird
