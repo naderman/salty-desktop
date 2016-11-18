@@ -45,6 +45,7 @@ install_packages:
   - git
   - keepassx
   - nginx
+  - curl
   - build-essential
   - postgresql
   - redis-server
