@@ -50,3 +50,4 @@ install_packages:
   - redis-server
   - redis-tools
   - thunderbird
+  - gimp
