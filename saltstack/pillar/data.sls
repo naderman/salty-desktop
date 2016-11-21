@@ -52,3 +52,4 @@ install_packages:
   - redis-tools
   - thunderbird
   - gimp
+  - mesa-utils
