@@ -12,7 +12,7 @@ vagrant_bib:
     - unless: '[ "$(vagrant plugin list|grep bib-vagrant|wc -l)" = "1" ]'
     - user: {{ user }}
     - name: |
-        vagrant plugin install bib-vagrant
+        vagrant plugin install bib-vagrant --version 0.1.6
     - require:
       - pkg: install_vagrant
 
@@ -31,5 +31,23 @@ vagrant_faster:
     - user: {{ user }}
     - name: |
         vagrant plugin install vagrant-faster
+    - require:
+      - pkg: install_vagrant
+
+vagrant_hosts:
+  cmd.run:
+    - unless: '[ "$(vagrant plugin list|grep vagrant-hosts|wc -l)" = "1" ]'
+    - user: {{ user }}
+    - name: |
+        vagrant plugin install vagrant-hosts
+    - require:
+      - pkg: install_vagrant
+
+vagrant_logs:
+  cmd.run:
+    - unless: '[ "$(vagrant plugin list|grep vagrant-logs|wc -l)" = "1" ]'
+    - user: {{ user }}
+    - name: |
+        vagrant plugin install vagrant-logs
     - require:
       - pkg: install_vagrant
