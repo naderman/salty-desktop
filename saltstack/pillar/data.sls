@@ -53,3 +53,4 @@ install_packages:
   - thunderbird
   - gimp
   - mesa-utils
+  - mysql-server
