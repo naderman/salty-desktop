@@ -54,3 +54,4 @@ install_packages:
   - gimp
   - mesa-utils
   - mysql-server
+  - skype
