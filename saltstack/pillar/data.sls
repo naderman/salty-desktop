@@ -40,6 +40,7 @@ customize_desktop:
 install_gems:
   - rubocop
 install_packages:
+  - apt-file
   - vim-nox
   - vim-gtk
   - git
@@ -52,6 +53,15 @@ install_packages:
   - redis-tools
   - thunderbird
   - gimp
+  - inkscape
   - mesa-utils
   - mysql-server
   - skype
+  - pngcrush
+  - quassel-client
+  - shutter
+  - inetutils-traceroute
+  - vlc
+  - kdenlive
+  - golang-go
+  - network-manager-openvpn
